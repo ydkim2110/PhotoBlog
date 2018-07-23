@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@color/colorPrimary">
+
+    <RelativeLayout
+        android:id="@+id/relLayout1"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/login_welcome"
+            android:text="Welcome to"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_below="@+id/login_welcome"
+            android:text="Photo Blog"
+            android:textSize="40sp"
+            android:textColor="@android:color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relLayout2"
+        android:layout_below="@+id/relLayout1"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/login_email"
+                android:hint="Email..."
+                android:textColor="@android:color/white"
+                android:backgroundTint="@android:color/white"
+                android:textColorHint="@color/whiteTransparentHalf"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relLayout3"
+        android:layout_below="@+id/relLayout2"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/login_password"
+                android:hint="Password..."
+                android:textColor="@android:color/white"
+                android:backgroundTint="@android:color/white"
+                android:textColorHint="@color/whiteTransparentHalf"
+                android:textSize="18sp"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relLayout4"
+        android:layout_below="@+id/relLayout3"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/login_btn"
+            android:text="LOGIN"
+            android:textSize="18sp"
+            android:padding="16dp"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relLayout5"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/login_register_btn"
+            android:text="Register"
+            android:textSize="18sp"
+            android:padding="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relLayout6"
+        android:layout_below="@+id/relLayout4"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:id="@+id/login_progressbar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:id="@+id/login_progressbar_text"
+            android:layout_below="@+id/login_progressbar"
+            android:layout_centerHorizontal="true"
+            android:text="Logging..."
+            android:textColor="@android:color/white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

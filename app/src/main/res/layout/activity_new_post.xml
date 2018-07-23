@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewPostActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/newpost_toolbar"
+        android:background="@color/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:id="@+id/relLayout1"
+        android:layout_below="@+id/newpost_toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/newpost_image"
+            android:src="@drawable/work"
+            android:scaleType="centerCrop"
+            android:layout_width="match_parent"
+            android:layout_height="250dp" />
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/relLayout2"
+        android:layout_below="@+id/relLayout1"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        
+        <EditText
+            android:id="@+id/newpost_description"
+            android:hint="Add Description..."
+            android:inputType="textMultiLine"
+            android:maxLength="125"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/newpost_btn"
+            android:layout_below="@+id/newpost_description"
+            android:text="Post Blog"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            android:padding="16dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/colorAccent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/relLayout3"
+        android:layout_below="@+id/relLayout2"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:id="@+id/newpost_progressbar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp" />
+
+        <TextView
+            android:id="@+id/newpost_progressbar_text"
+            android:layout_below="@+id/newpost_progressbar"
+            android:layout_centerHorizontal="true"
+            android:text="Uploading..."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
