@@ -17,14 +17,32 @@
 
     </android.support.v7.widget.Toolbar>
 
+    <FrameLayout
+        android:id="@+id/main_container"
+        android:layout_below="@+id/main_toolbar"
+        android:layout_above="@+id/main_bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </FrameLayout>
+
     <android.support.design.widget.FloatingActionButton
         android:id="@+id/fab"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
         android:layout_marginRight="20dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginBottom="70dp"
         android:src="@drawable/ic_add"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/main_bottom_nav"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/bottom_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.design.widget.BottomNavigationView>
 
 </RelativeLayout>
